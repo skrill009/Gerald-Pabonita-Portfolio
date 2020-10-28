@@ -1,0 +1,64 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+
+@import "variables";
+@import "home";
+@import "menu";
+@import "projects";
+@import "skills";
+@import "about";
+@import "contact";
+
+body {
+  background-color: $primary-color;
+  color: #fff;
+  height: 100vh;
+  font-family: "Montserrat", open-sans, Tahoma, sans-serif;
+  line-height: 1;
+}
+
+h1,
+h2,
+h3 {
+  font-weight: 400;
+}
+
+a {
+  color: #fff;
+  text-decoration: none;
+}
+
+header {
+  width: 100%;
+  padding: 1rem;
+  position: fixed;
+  z-index: 2;
+  nav ul{
+    list-style: none;
+  }
+}
+
+main {
+  height: 100%;
+  width: 100%;
+  .social-icons {
+    position: fixed;
+    bottom: 1rem;
+    left: 1rem;
+    a {
+      @include transition-ease;
+      padding: 0.5rem;
+      &:hover {
+        color: $secondary-color;
+        scale: 1.1;
+      }
+    }
+  }
+}
+
+footer {
+  font-size: 1rem;
+  position: fixed;
+  bottom: 0.4rem;
+  right: 1rem;
+}
+
