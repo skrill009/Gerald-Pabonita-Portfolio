@@ -873,6 +873,13 @@
     height: 420px;
     width: 1000px;
   }
+  .contact__home__content__list {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (1fr)[3];
+        grid-template-columns: repeat(3, 1fr);
+    font-size: 1.5rem;
+  }
 }
 
 body {
