@@ -1,37 +1,37 @@
-@include media-md{
-  .menu-btn{
+@include media-md {
+  .menu-btn {
     visibility: hidden;
   }
 
-  .nav{
+  .nav {
     visibility: visible;
 
-    .menu-nav{
+    .menu-nav {
       display: block;
       transform: translateY(0);
       height: 100%;
-      background: rgba(0,0,0,0.4);
+      background: rgba(0, 0, 0, 0.4);
       text-align: center;
       padding-left: 2rem;
 
-      &__item{
+      &__item {
         display: inline;
         padding-right: 1.5rem;
       }
 
-      &__link{
+      &__link {
         font-size: 1.5rem;
       }
     }
   }
 
   //Projects Page
-  .projects{
-    .home{
+  .projects {
+    .home {
       height: 40vh;
     }
-    &__items{
-      grid-template-columns: repeat(2,1fr);
+    &__items {
+      grid-template-columns: repeat(2, 1fr);
       margin: 10rem auto 0 auto;
       height: 500px;
       width: 800px;
@@ -39,17 +39,17 @@
   }
 }
 
-@include media-lg{
-  .projects{
-    &__items{
-      grid-template-columns: repeat(3,1fr);
+@include media-lg {
+  .projects {
+    &__items {
+      grid-template-columns: repeat(3, 1fr);
       margin: 10rem auto 0 auto;
       height: 420px;
       width: 1000px;
     }
   }
-  .contact__home__content__list{
-    display:grid;
+  .contact__home__content__list {
+    display: grid;
     grid-template-columns: repeat(3, 1fr);
     font-size: 1.5rem;
   }
